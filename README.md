@@ -23,3 +23,13 @@
 -- Genres (Array of Strings)
 -- Awards (Array of Obj)
 
+### Back-End
+```
+cd movee-api
+npm install
+npm run start
+```
+### Front-End
+```
+....
+```
