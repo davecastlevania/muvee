@@ -6,7 +6,6 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var moviesRouter = require('./routes/movies');
 
 mongoose.connect('mongodb://readonly:turner@ds043348.mongolab.com:43348/dev-challenge',  {useNewUrlParser: true} )
@@ -28,7 +27,6 @@ app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/movies', moviesRouter);
 
 module.exports = app;

@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-// var Movies = mongoose.model('User', new Schema({ TitleName: String, _id: Number}, { collection : 'Titles' }));   // collection name;
-
 var moviesSchema = mongoose.Schema({
     _id: mongoose.Types.ObjectId,
     title: "",
