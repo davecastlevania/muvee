@@ -1,11 +1,9 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var moviesSchema = mongoose.Schema({
-    _id: mongoose.Types.ObjectId,
-    title: "",
-    titleId: mongoose.Types.ObjectId,
-    }, { collection: 'Titles'});
-
-// Movies.find({}, function(err, data) { console.log(err, data, data.length);});
+const moviesSchema = mongoose.Schema({
+  _id: mongoose.Types.ObjectId,
+  title: '',
+  titleId: mongoose.Types.ObjectId,
+}, { collection: 'Titles' });
 
 module.exports = mongoose.model('Movies', moviesSchema);

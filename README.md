@@ -28,6 +28,8 @@
 cd movee-api
 npm install
 npm run start
+
+npm run lint # eslint-test
 ```
 ### Front-End
 ```
