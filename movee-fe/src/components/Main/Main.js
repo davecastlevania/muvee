@@ -10,8 +10,9 @@ const Main = () => (
     <Nav />
     <main>
       <Switch>
-        <Route exact path='/search' component={Search}/>
-        <Route path='/movies/:id' component={Details}/>
+      <Route exact path='/' component={Search}/>
+      <Route path='/search' component={Search}/>
+      <Route path='/movies/:id' component={Details}/>
       </Switch>
     </main>
   </div>
