@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom'
 import './Details.css';
 
 class Details extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
     console.log(this.props.location.state.movie)
@@ -48,7 +44,7 @@ class Details extends React.Component {
                 <li className="cast">
                     <span className="member"> 
                         {award.Award} - {award.AwardCompany} - <b>{award.AwardYear}</b> | 
-                        { award.AwardWon == true ? <span><b>Won</b> </span> : <span> Nominated</span>} 
+                        { award.AwardWon === true ? <span><b>Won</b> </span> : <span> Nominated</span>} 
                     </span>
                 </li>
             )}

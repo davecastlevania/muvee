@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar/SearchBar'
 import Movies from '../../util/Movies'
 import SearchResults from './SearchResults/SearchResults';
-import DetailsList from '../DetailsList/DetailsList';
 
 class Search extends Component {
   constructor(props) {
