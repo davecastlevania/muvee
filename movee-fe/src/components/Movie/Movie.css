@@ -1,0 +1,34 @@
+.Movie {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+.Movie-action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: color .25s;
+}
+
+.Movie-action:hover {
+  color: rgba(265, 265, 265, .5);
+}
+
+.Movie-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+}
+
+.Movie-information h3 {
+  margin-bottom: .22rem;
+}
+
+.Movie-information p {
+  font-size: .83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+}
